@@ -1,9 +1,9 @@
 # Training
 
-[Introduction To Containers](introduction-to-containers/README.md)
+[Introduction To Containers](introduction-to-containers)
 
-[Introduction To Kubernetes](introduction-to-kubernetes/README.md)
+[Introduction To Kubernetes](introduction-to-kubernetes)
 
-[Kubernetes Advance](kubernetes-advance/README.md)
+[Kubernetes Advance](kubernetes-advance)
 
-[Introduction To Helm](introduction-to-helm/README.md)
+[Introduction To Helm](introduction-to-helm)
