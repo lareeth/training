@@ -27,15 +27,25 @@ CONTAINER ID    IMAGE    COMMAND                  CREATED            STATUS     
 8e9ee6083a58    demo     "docker-entrypoint.s…"   13 seconds ago     Up 13 seconds              epic_easley
 ```
 This shows us the containers running on our machine, you can see a unique container id, and the image
+
 The ports section is empty, which shows us that we havent forwarded the ports inside the container to our machine
 
 ```console
-docker run -it -p 3000:3000 demo
+docker run -p 3000:3000 demo
 ```
 ```
 CONTAINER ID    IMAGE   COMMAND                  CREATED         STATUS         PORTS                    NAMES
 dd3a0143aba4    demo    "docker-entrypoint.s…"   4 seconds ago   Up 4 seconds   0.0.0.0:3000->3000/tcp   xenodochial_kapitsa
 ```
+
+We have added the parameter `-p` to the command which allows us to forward the port to our local machine
+
+```console
+docker run -it -p 3000:3000 demo
+```
+
+We can also add the `-it` parameter so that the pod is removed after we have run it, this is useful if you need to test the container over and over, as you dont need to remove the old container that would be using the port
+
 
 
 ## Docker
@@ -43,6 +53,7 @@ dd3a0143aba4    demo    "docker-entrypoint.s…"   4 seconds ago   Up 4 seconds 
 ## Image Hosting
 
 ### Docker hub
+https://hub.docker.com/
 
 ```console
 docker login
