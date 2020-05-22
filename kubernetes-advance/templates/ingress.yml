@@ -7,10 +7,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - example-app-test.engineering.mnscorp.net
+    - example-app.external-domain.com
     secretName: wildcard-certificate-tls-secret
   rules:
-  - host: example-app.engineering.mnscorp.net
+  - host: example-app.external-domain.com
     http:
       paths:
       - path: /

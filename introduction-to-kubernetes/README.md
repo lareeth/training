@@ -4,8 +4,9 @@
 - Master
   - Kubelet
 - Nodes
-- What is AKS
-  - Shared responsability
+
+### What is AKS
+https://azure.microsoft.com/en-gb/services/kubernetes-service/
 
 ## Types of workloads
 
@@ -33,21 +34,23 @@ kubectl delete -f ./templates/
 ```
 
 ## Debugging your app
-- Viewing pods
+### Viewing deployments
+```
+kubectl get deployment
+```
+### Viewing pods
 
 ```console
 kubectl get pods
 ```
-- Viewing nodes
+
+### Viewing nodes
 ```console
 kubectl get nodes
 ```
 
-```console
-kubectl get nodes -o wide
-```
-- Troubleshooting
-  - kubectl get, describe, events, logs
+### Troubleshooting
+kubectl get, describe, events, logs
 
 ```console
 kubectl describe pod <pod name>
