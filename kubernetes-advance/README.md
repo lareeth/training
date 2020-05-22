@@ -7,6 +7,15 @@ https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-read
 ### Resource Limits
 https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
+```console
+kubectl top pods
+```
+
+```console
+kubectl top nodes
+```
+
+
 ### Autoscaling
 https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
 
