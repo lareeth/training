@@ -8,10 +8,18 @@
   - Shared responsability
 
 ## Types of workloads
-- Deployments
-  - Replica Sets
-- Daemon Sets
-- Cron Jobs
+
+### Deployments
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+
+### Replica Sets
+https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
+
+### Daemon Sets
+https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
+
+### Cron Jobs
+https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/
 
 ## Deploying an app
 - Kubectl templates
@@ -20,25 +28,25 @@
 ## Debugging your app
 - Viewing pods
 
-```
+```console
 kubectl get pods
 ```
 - Viewing nodes
-```
+```console
 kubectl get nodes
 ```
 
-```
+```console
 kubectl get nodes -o wide
 ```
 - Troubleshooting
   - kubectl get, describe, events, logs
 
-```
+```console
 kubectl describe pod <pod name>
 ```
 
-```
+```console
 kubectl logs <pod name>
 ```
 
@@ -46,17 +54,22 @@ kubectl logs <pod name>
 kubectl get events
 ```
 ## Viewing your app
-- Services
-```
+
+### Services
+https://kubernetes.io/docs/concepts/services-networking/service/
+
+```console
 kubectl get services
 ```
 
 https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/
-```
+```console
 kubectl port-forward service/<service name> <my port>:<remote port>
 ```
-- Ingress
-```
+### Ingress
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+```console
 kubectl get ingress
 ```
 
@@ -64,13 +77,13 @@ https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
 
 https://github.com/kubernetes/ingress-nginx/blob/master/README.md
 
-  - Nginx ingress
+### Nginx ingress
     - Certificates
     - Authentication / OAuth
 
 ## Updating your app
 - Scaling
 
-```
+```console
 kubectl scale --replicas=5 deploy/<deployment name>
 ```
