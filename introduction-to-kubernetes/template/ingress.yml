@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: example-app
+  labels:
+    app: example-app
+spec:
+  tls:
+  - hosts:
+    - example-app-test.engineering.mnscorp.net
+    secretName: wildcard-certificate-tls-secret
+  rules:
+  - host: example-app-test.engineering.mnscorp.net
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: example-app
+          servicePort: 80
