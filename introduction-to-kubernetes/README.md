@@ -22,8 +22,15 @@ https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
 https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/
 
 ## Deploying an app
-- Kubectl templates
-- Helm templates
+
+```console
+kubectl apply -f ./templates/
+```
+
+To remove
+```console
+kubectl delete -f ./templates/
+```
 
 ## Debugging your app
 - Viewing pods
