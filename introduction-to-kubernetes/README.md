@@ -5,8 +5,9 @@
   - Kubelet
 - Nodes
 
-### What is AKS
-https://azure.microsoft.com/en-gb/services/kubernetes-service/
+### Managed Kubernetes
+- [Azure AKS](https://azure.microsoft.com/en-gb/services/kubernetes-service/)
+- [AWS EKS](https://aws.amazon.com/eks/)
 
 ## Types of workloads
 
