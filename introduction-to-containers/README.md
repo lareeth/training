@@ -3,13 +3,18 @@
 ## What is a container
 https://www.docker.com/resources/what-container
 
+## Open Container Initiative
+https://github.com/opencontainers/image-spec
+
 ## Installing a container runtime
 
-### Install Docker
-https://docs.docker.com/get-docker/
+* Docker - https://docs.docker.com/get-docker/ *(Recommended)*
+* Podman - https://podman.io/getting-started/installation
 
-
+## Getting Started
 ### How to build a container
+We have added the parameter `-t` to the command which allows us to tag the container with a readable name
+
 ```console
 docker build -t demo .
 ```
@@ -49,11 +54,10 @@ We can also add the `-it` parameter so that the pod is removed after we have run
 
 
 
-## Docker
 
 ## Image Hosting
 
-### Docker hub
+### Docker Hub
 https://hub.docker.com/
 
 ```console
