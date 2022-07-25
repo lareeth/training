@@ -52,7 +52,17 @@ docker run -it -p 3000:3000 demo
 
 We can also add the `-it` parameter so that the pod is removed after we have run it, this is useful if you need to test the container over and over, as you dont need to remove the old container that would be using the port
 
+### Adding Environment Variables
+If you need to pass configuration or settings to the application, you can use environment variables to do so. The `-e` parameter is a key pair
+```console
+docker run -e KEY=VALUE -it -p 3000:3000 demo
+```
 
+## Troubleshooting
+### Viewing Logs
+```console
+docker logs <container name>
+```
 
 
 ## Image Hosting
