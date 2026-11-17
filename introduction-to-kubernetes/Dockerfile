@@ -1,5 +1,7 @@
 # The FROM command selects the docker image we want to use as the base image for our container
-FROM node:14
+FROM node:22
+
+WORKDIR /app/
 
 # We need to add the files from the machine into the image, they do not get copied automatically
 ADD ./src/package.json ./
